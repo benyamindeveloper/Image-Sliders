@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider one</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="dark-mode">
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide" data-pos="0">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=900&h=600&fit=crop" alt="Nature">
+                <div class="caption">
+                    <h3>Beautiful Flowers</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="slide" data-pos="1">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&h=600&fit=crop" alt="City">
+                <div class="caption">
+                    <h3>City Lights</h3>
+                    <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
+            </div>
+            <div class="slide" data-pos="2">
+                <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?w=900&h=600&fit=crop" alt="Ocean">
+                <div class="caption">
+                    <h3>Ocean Waves</h3>
+                    <p>Donec auctor leo at felis aliquam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav prev" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="nav next" onclick="changeSlide(1)">&#10095;</div>
+        <div class="indicators"></div>
+    </div>
+
+    <div class="mode-toggle" onclick="toggleMode()">🌙</div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
